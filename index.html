@@ -3,39 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Website</title>
+    <title>HTML Practice - 460 A</title>
     <link rel="stylesheet" href="styles.css">
-</head>
+    </head>
 <body>
-    <div class="corner-name">Arshdeep Saran</div>
     <div class="container">
         <h1>HTML Practice - 460 A</h1>
-        <div class="dropdown">
-            <button onclick="toggleDropdown()" class="dropbtn">Navigate to...</button>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="letter.html">Marking up a letter</a>
-                <a href="birdwatching/birdwatching.html">Birdwatching</a>
-                <a href="mdn-splash/mdn-splash.html">mdn-splash</a>
-            </div>
+        <div class="links">
+            <a href="letter.html">Marking up a letter</a>
+            <a href="birdwatching/birdwatching.html">Birdwatching</a>
+            <a href="mdn-splash/mdn-splash.html">mdn-splash</a>
         </div>
     </div>
-
-    <script>
-        function toggleDropdown() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-
-        window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                for (var i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-    </script>
 </body>
 </html>
